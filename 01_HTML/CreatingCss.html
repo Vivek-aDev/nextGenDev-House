@@ -16,16 +16,22 @@
         border: 10px solid red;
         padding: 30px;
       }
-      nav ul{
+      nav ul {
         display: flex;
         justify-content: center;
         list-style-type: none;
       }
-      nav ul li{
+      nav ul li {
         padding: 12px;
         border: 2px solid greenyellow;
         border-radius: 10px;
         margin: 4px;
+      }
+      form input[type="text"],
+      form input[type="number"],
+      form input[type="email"]{
+        width: 20%;
+        margin: 5px 0;
       }
     </style>
   </head>
@@ -46,5 +52,16 @@
 
       <img src="https://via.placeholder.com/200" alt="Sample Image" />
     </div>
+
+    <!-- Creating a Simple Form -->
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" name="name" /><br /><br />
+      <label for="">Contact Number: </label>
+      <input type="number" /><br /><br />
+      <label for="email">Email: </label>
+      <input type="email" />
+      <input type="submit" />
+    </form>
   </body>
 </html>
