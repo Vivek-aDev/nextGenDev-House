@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to Flexbox</title>
+    <style>
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .flex-item {
+        background-color: lightblue;
+        padding: 20px;
+        margin: 10px;
+        width: 100px;
+        flex: 1 1 200px;
+      }
+      @media (max-width: 600px){
+        .flex-container{
+            flex-direction: column;
+            justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">item ONE</div>
+      <div class="flex-item">item TWO</div>
+      <div class="flex-item">item THREE</div>
+      <div class="flex-item">item THREE</div>
+      <div class="flex-item">item THREE</div>
+      <div class="flex-item">item THREE</div>
+      <div class="flex-item">item THREE</div>
+      <div class="flex-item">item THREE</div>
+      <div class="flex-item">item THREE</div>
+      <div class="flex-item">item THREE</div>
+      <div class="flex-item">item THREE</div>
+      <div class="flex-item">item THREE</div>
+    </div>
+  </body>
+</html>
